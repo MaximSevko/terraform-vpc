@@ -15,12 +15,6 @@ variable "vpc_cidr" {
   default     = "10.81.0.0/16"
 }
 
-variable "vpc_azs" {
-  description = "Availability zones for VPC"
-  type        = list(string)
-  default     = ["eu-central-1a", "eu-central-1b", "eu-central-1c"]
-}
-
 variable "vpc_intra_subnets" {
   description = "Private subnets for VPC"
   type        = list(string)

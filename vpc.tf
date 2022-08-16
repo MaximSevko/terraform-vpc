@@ -16,7 +16,6 @@ module "vpc" {
 
   enable_nat_gateway = var.vpc_enable_nat_gateway
   enable_vpn_gateway = false
-  assign_ipv6_address_on_creation = "true"
   intra_subnet_assign_ipv6_address_on_creation = "true"
   public_subnet_assign_ipv6_address_on_creation = "true"
   enable_ipv6 = "true"

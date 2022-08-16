@@ -1,3 +1,14 @@
+
+variable "AWS_Region" {
+    default = "eu-north-1"
+}
+
+variable "vpc_name" {
+  description = "Name of VPC"
+  type        = string
+  default     = "vpc3"
+}
+
 variable "vpc_cidr" {
   description = "CIDR block for VPC"
   type        = string

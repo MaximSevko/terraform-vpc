@@ -10,7 +10,7 @@ module "vpc" {
   name = var.vpc_name
   cidr = var.vpc_cidr
 
-  azs             = var.vpc_azs
+  azs             = ["${aws_route_table.public-rt.id}a", "${aws_route_table.public-rt.id}b", "${aws_route_table.public-rt.id}c"]
   intra_subnets  = var.vpc_intra_subnets 
   public_subnets  = var.vpc_public_subnets
 

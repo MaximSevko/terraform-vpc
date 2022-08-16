@@ -10,7 +10,7 @@ module "vpc" {
   name = var.vpc_name
   cidr = var.vpc_cidr
 
-  azs             = ["${AWS_Region.public-rt.id}a", "${AWS_Region.public-rt.id}b", "${AWS_Region.public-rt.id}c"]
+  azs             = ["${var.AWS_Region}a", "${var.AWS_Region}b", "${var.AWS_Region}c"]
   intra_subnets  = var.vpc_intra_subnets 
   public_subnets  = var.vpc_public_subnets
 
